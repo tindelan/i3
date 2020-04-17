@@ -11,33 +11,39 @@
 
 set $mod Mod4
 
+
+# Assigning things to workspaces
 #assign Firefox to workspace 1
-assign [class="firefox"] $ws1
+#assign [class="firefox"] $ws1
 
 #assign atom to workspace 2
-assign [class="atom"] $ws2
+#assign [class="atom"] $ws2
 
 #assign spotify to workspace 3
-assign [class="spotify"] $ws3
+#assign [class="spotify"] $ws3
 
 #assign terminal to workspace 4
-assign [class="xfce4-terminal"] $ws4
+#assign [class="xfce4-terminal"] $ws4
 
 #assign discord to workspace 5
-assign [class="discord"] $ws5
+#assign [class="discord"] $ws5
 
 
 
 
 # Startupsoftware
 exec xfsettingsd
-exec blueman-manager
+exec blueman-tray
 exec xfce4-power-manager
 exec compton
 exec discord
+exec nextcloud
 
 # costum keybindings
 bindsym $mod+x exec i3lock -c 000000
+
+#remove titlebar
+new_window 1pixel
 
 
 
